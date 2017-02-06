@@ -1,0 +1,124 @@
+
+/*Aqui definimos a altura acima e abaixo do menu*/
+#primary_nav_wrap
+{
+	margin-top:-10px;/*aqui nos subimos o menu para ficar encima do banner*/
+    margin-bottom:0px;
+
+}
+/*Aqui zeramos os espacamentos padrao, deixamos o menu flutuante para o efeito do dropdown, tambem definimos a largura e a cor de fundo*/
+#primary_nav_wrap ul
+{
+	list-style:none;
+	position:relative;
+	float:left;
+    width:100%;
+    background:#3949ab;
+	margin:0;
+	padding:0;
+}
+/*Aqui definimos como aparecen os menus cor de fonte e a fonte propriamente*/
+#primary_nav_wrap ul a
+{
+	display:block;
+	color:#ffffff;
+	text-decoration:none;
+	font-weight:700;
+	font-size:12px;
+	line-height:32px;
+	padding:0 15px;
+	font-family:"HelveticaNeue","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+/*Aqui definimos como aparecen os submenus*/
+#primary_nav_wrap ul li
+{
+	position:relative;
+	float:left;
+	margin:0;
+	padding:0
+}
+/*Aqui definimos oque acontece quando estamos com o mouse encima*/
+#primary_nav_wrap ul li:hover
+{
+	background:#fff;
+}
+#primary_nav_wrap li a:hover,#primary_nav_wrap li a:target{
+    color:#3949ab;
+}
+/*Aqui definimos oque acontece quando aparece o submenu
+suas cores entre outros*/
+#primary_nav_wrap ul ul
+{
+	display:none;
+	position:absolute;
+	top:100%;
+	left:0;
+	color:#3949ab;
+    width:150px;
+	padding:0
+}
+/*aqui fica definido o tamanho do submenu que aparece ao colocar o mouse encima */
+#primary_nav_wrap ul ul li
+{
+	float:none;
+	width:150px;
+}
+
+#primary_nav_wrap ul ul a
+{
+	line-height:120%;
+	padding:10px 15px;
+}
+/* aqui faz a magica do submenu aparecer */
+#primary_nav_wrap ul li:hover > ul
+{
+	display:block;
+}
+
+.corpo{
+    width:100%;
+    min-height: 67%;
+
+}
+/*Aqui definimos como vai ser o texto da pagina inicial poderemos colocar para paginas semelhantes*/
+.texto{
+    max-height: 30%;
+    width:80%;
+    overflow:auto;/*Essa tag simplemente coloca uma barra de rolagem na div*/
+    
+}
+#linha-home {
+    width:80%;
+    height:1px;
+    margin:0;/*Aqui colocamos a linha logo abaixo do nosso texto*/
+    margin-top: 4px;
+    border-width: 0px;
+    border-top-width: 1px;
+    
+}
+/*Define a altura,largura,cor e como estao dispostos os elementos do rodape*/
+.rodape{
+    background:#3949ab;
+    height:50px;
+    text-align: center;
+    width: 100%;
+    margin-bottom:10px;
+}
+/*Define a disposicao dos elementos que fazem parte da midia social da pagina*/
+.social{
+    float:left;
+    width: 30%;
+    max-height:50px;
+}
+/*Trada das imagens*/
+.social img{
+    margin-top: 10px;
+    width: 35px;
+}
+    
+.texto-rodape{
+    float:left;
+    width: 70%;
+    margin-top:20px;
+    color:#ffffff
+}
